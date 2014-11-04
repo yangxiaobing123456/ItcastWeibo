@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECF3FA731A08BE6300CBDB16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3FA721A08BE6300CBDB16 /* main.m */; };
+		ECF3FA761A08BE6300CBDB16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3FA751A08BE6300CBDB16 /* AppDelegate.m */; };
+		ECF3FA791A08BE6300CBDB16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3FA781A08BE6300CBDB16 /* ViewController.m */; };
+		ECF3FA7C1A08BE6300CBDB16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF3FA7A1A08BE6300CBDB16 /* Main.storyboard */; };
+		ECF3FA7E1A08BE6300CBDB16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF3FA7D1A08BE6300CBDB16 /* Images.xcassets */; };
+		ECF3FA811A08BE6300CBDB16 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF3FA7F1A08BE6300CBDB16 /* LaunchScreen.xib */; };
+		ECF3FA8D1A08BE6300CBDB16 /* ItcastWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3FA8C1A08BE6300CBDB16 /* ItcastWeiboTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECF3FA871A08BE6300CBDB16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF3FA651A08BE6300CBDB16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF3FA6C1A08BE6300CBDB16;
+			remoteInfo = ItcastWeibo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECF3FA6D1A08BE6300CBDB16 /* ItcastWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItcastWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF3FA711A08BE6300CBDB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF3FA721A08BE6300CBDB16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECF3FA741A08BE6300CBDB16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECF3FA751A08BE6300CBDB16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECF3FA771A08BE6300CBDB16 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ECF3FA781A08BE6300CBDB16 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ECF3FA7B1A08BE6300CBDB16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECF3FA7D1A08BE6300CBDB16 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECF3FA801A08BE6300CBDB16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		ECF3FA861A08BE6300CBDB16 /* ItcastWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItcastWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF3FA8B1A08BE6300CBDB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF3FA8C1A08BE6300CBDB16 /* ItcastWeiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItcastWeiboTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECF3FA6A1A08BE6300CBDB16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF3FA831A08BE6300CBDB16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECF3FA641A08BE6300CBDB16 = {
+			isa = PBXGroup;
+			children = (
+				ECF3FA6F1A08BE6300CBDB16 /* ItcastWeibo */,
+				ECF3FA891A08BE6300CBDB16 /* ItcastWeiboTests */,
+				ECF3FA6E1A08BE6300CBDB16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECF3FA6E1A08BE6300CBDB16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECF3FA6D1A08BE6300CBDB16 /* ItcastWeibo.app */,
+				ECF3FA861A08BE6300CBDB16 /* ItcastWeiboTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECF3FA6F1A08BE6300CBDB16 /* ItcastWeibo */ = {
+			isa = PBXGroup;
+			children = (
+				ECF3FA741A08BE6300CBDB16 /* AppDelegate.h */,
+				ECF3FA751A08BE6300CBDB16 /* AppDelegate.m */,
+				ECF3FA771A08BE6300CBDB16 /* ViewController.h */,
+				ECF3FA781A08BE6300CBDB16 /* ViewController.m */,
+				ECF3FA7A1A08BE6300CBDB16 /* Main.storyboard */,
+				ECF3FA7D1A08BE6300CBDB16 /* Images.xcassets */,
+				ECF3FA7F1A08BE6300CBDB16 /* LaunchScreen.xib */,
+				ECF3FA701A08BE6300CBDB16 /* Supporting Files */,
+			);
+			path = ItcastWeibo;
+			sourceTree = "<group>";
+		};
+		ECF3FA701A08BE6300CBDB16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECF3FA711A08BE6300CBDB16 /* Info.plist */,
+				ECF3FA721A08BE6300CBDB16 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECF3FA891A08BE6300CBDB16 /* ItcastWeiboTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECF3FA8C1A08BE6300CBDB16 /* ItcastWeiboTests.m */,
+				ECF3FA8A1A08BE6300CBDB16 /* Supporting Files */,
+			);
+			path = ItcastWeiboTests;
+			sourceTree = "<group>";
+		};
+		ECF3FA8A1A08BE6300CBDB16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECF3FA8B1A08BE6300CBDB16 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECF3FA6C1A08BE6300CBDB16 /* ItcastWeibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF3FA901A08BE6300CBDB16 /* Build configuration list for PBXNativeTarget "ItcastWeibo" */;
+			buildPhases = (
+				ECF3FA691A08BE6300CBDB16 /* Sources */,
+				ECF3FA6A1A08BE6300CBDB16 /* Frameworks */,
+				ECF3FA6B1A08BE6300CBDB16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ItcastWeibo;
+			productName = ItcastWeibo;
+			productReference = ECF3FA6D1A08BE6300CBDB16 /* ItcastWeibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECF3FA851A08BE6300CBDB16 /* ItcastWeiboTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF3FA931A08BE6300CBDB16 /* Build configuration list for PBXNativeTarget "ItcastWeiboTests" */;
+			buildPhases = (
+				ECF3FA821A08BE6300CBDB16 /* Sources */,
+				ECF3FA831A08BE6300CBDB16 /* Frameworks */,
+				ECF3FA841A08BE6300CBDB16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECF3FA881A08BE6300CBDB16 /* PBXTargetDependency */,
+			);
+			name = ItcastWeiboTests;
+			productName = ItcastWeiboTests;
+			productReference = ECF3FA861A08BE6300CBDB16 /* ItcastWeiboTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECF3FA651A08BE6300CBDB16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = iThinker;
+				TargetAttributes = {
+					ECF3FA6C1A08BE6300CBDB16 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					ECF3FA851A08BE6300CBDB16 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = ECF3FA6C1A08BE6300CBDB16;
+					};
+				};
+			};
+			buildConfigurationList = ECF3FA681A08BE6300CBDB16 /* Build configuration list for PBXProject "ItcastWeibo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECF3FA641A08BE6300CBDB16;
+			productRefGroup = ECF3FA6E1A08BE6300CBDB16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECF3FA6C1A08BE6300CBDB16 /* ItcastWeibo */,
+				ECF3FA851A08BE6300CBDB16 /* ItcastWeiboTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECF3FA6B1A08BE6300CBDB16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF3FA7C1A08BE6300CBDB16 /* Main.storyboard in Resources */,
+				ECF3FA811A08BE6300CBDB16 /* LaunchScreen.xib in Resources */,
+				ECF3FA7E1A08BE6300CBDB16 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF3FA841A08BE6300CBDB16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECF3FA691A08BE6300CBDB16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF3FA791A08BE6300CBDB16 /* ViewController.m in Sources */,
+				ECF3FA761A08BE6300CBDB16 /* AppDelegate.m in Sources */,
+				ECF3FA731A08BE6300CBDB16 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF3FA821A08BE6300CBDB16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF3FA8D1A08BE6300CBDB16 /* ItcastWeiboTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECF3FA881A08BE6300CBDB16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF3FA6C1A08BE6300CBDB16 /* ItcastWeibo */;
+			targetProxy = ECF3FA871A08BE6300CBDB16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECF3FA7A1A08BE6300CBDB16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECF3FA7B1A08BE6300CBDB16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECF3FA7F1A08BE6300CBDB16 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECF3FA801A08BE6300CBDB16 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECF3FA8E1A08BE6300CBDB16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ECF3FA8F1A08BE6300CBDB16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECF3FA911A08BE6300CBDB16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ItcastWeibo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECF3FA921A08BE6300CBDB16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ItcastWeibo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ECF3FA941A08BE6300CBDB16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ItcastWeiboTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItcastWeibo.app/ItcastWeibo";
+			};
+			name = Debug;
+		};
+		ECF3FA951A08BE6300CBDB16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ItcastWeiboTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItcastWeibo.app/ItcastWeibo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECF3FA681A08BE6300CBDB16 /* Build configuration list for PBXProject "ItcastWeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF3FA8E1A08BE6300CBDB16 /* Debug */,
+				ECF3FA8F1A08BE6300CBDB16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF3FA901A08BE6300CBDB16 /* Build configuration list for PBXNativeTarget "ItcastWeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF3FA911A08BE6300CBDB16 /* Debug */,
+				ECF3FA921A08BE6300CBDB16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ECF3FA931A08BE6300CBDB16 /* Build configuration list for PBXNativeTarget "ItcastWeiboTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF3FA941A08BE6300CBDB16 /* Debug */,
+				ECF3FA951A08BE6300CBDB16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECF3FA651A08BE6300CBDB16 /* Project object */;
+}
