@@ -17,6 +17,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 创建窗口
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    UITabBarController *tabBarVc = [[UITabBarController alloc] init];
+    
+    // 添加子控制器
+    
+    
+    // 显示窗口并且成为主窗口
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

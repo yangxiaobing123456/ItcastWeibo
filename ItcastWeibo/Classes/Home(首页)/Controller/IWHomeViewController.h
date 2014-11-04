@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  IWHomeViewController.h
 //  ItcastWeibo
 //
 //  Created by yz on 14/11/4.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface IWHomeViewController : UIViewController
 
 @end
-
