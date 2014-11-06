@@ -7,12 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ECF3FA761A08BE6300CBDB16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3FA751A08BE6300CBDB16 /* AppDelegate.m */; };
+		EC6281AD1A0A78CC00C4B8AA /* IWPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6281AC1A0A78CC00C4B8AA /* IWPopView.m */; };
+		EC6281B01A0A878B00C4B8AA /* IWPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6281AF1A0A878B00C4B8AA /* IWPopViewController.m */; };
+		EC6281EA1A0AFDB400C4B8AA /* IWNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6281E91A0AFDB400C4B8AA /* IWNavViewController.m */; };
+		EC96951D1A09B8E00052E440 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = EC96951C1A09B8E00052E440 /* UIView+Frame.m */; };
+		EC9695201A09DA980052E440 /* IWTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EC96951F1A09DA980052E440 /* IWTabBarButton.m */; };
+		EC9695231A09F9AA0052E440 /* IWBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9695221A09F9AA0052E440 /* IWBadgeView.m */; };
+		EC9695261A0A177D0052E440 /* UIBarButtonItem+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9695251A0A177D0052E440 /* UIBarButtonItem+Create.m */; };
+		EC9695291A0A1B370052E440 /* IWTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9695281A0A1B370052E440 /* IWTitleButton.m */; };
+		EC9695E91A0A6D700052E440 /* UIImage+Resizable.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9695E81A0A6D700052E440 /* UIImage+Resizable.m */; };
+		ECA9B0371A092DA4007B494F /* IWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA9B0361A092DA4007B494F /* IWTabBar.m */; };
 		ECF3FA7E1A08BE6300CBDB16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF3FA7D1A08BE6300CBDB16 /* Images.xcassets */; };
 		ECF3FA811A08BE6300CBDB16 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF3FA7F1A08BE6300CBDB16 /* LaunchScreen.xib */; };
 		ECF3FA8D1A08BE6300CBDB16 /* ItcastWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3FA8C1A08BE6300CBDB16 /* ItcastWeiboTests.m */; };
 		ECF3FABE1A0904DB00CBDB16 /* IWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3FAAD1A0904DB00CBDB16 /* IWHomeViewController.m */; };
 		ECF3FABF1A0904DB00CBDB16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3FAB51A0904DB00CBDB16 /* main.m */; };
+		ECF3FAC91A090C2C00CBDB16 /* IWMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3FAC81A090C2C00CBDB16 /* IWMessageViewController.m */; };
+		ECF3FACC1A090C3700CBDB16 /* IWDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3FACB1A090C3700CBDB16 /* IWDiscoverViewController.m */; };
+		ECF3FACF1A090C4900CBDB16 /* IWProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3FACE1A090C4900CBDB16 /* IWProfileViewController.m */; };
+		ECF3FAD61A090C8800CBDB16 /* IWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3FAD51A090C8800CBDB16 /* IWTabBarController.m */; };
+		ECF3FAD91A090EE600CBDB16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3FAD81A090EE600CBDB16 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,10 +40,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC6281AB1A0A78CC00C4B8AA /* IWPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWPopView.h; sourceTree = "<group>"; };
+		EC6281AC1A0A78CC00C4B8AA /* IWPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWPopView.m; sourceTree = "<group>"; };
+		EC6281AE1A0A878B00C4B8AA /* IWPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWPopViewController.h; sourceTree = "<group>"; };
+		EC6281AF1A0A878B00C4B8AA /* IWPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWPopViewController.m; sourceTree = "<group>"; };
+		EC6281E81A0AFDB400C4B8AA /* IWNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWNavViewController.h; sourceTree = "<group>"; };
+		EC6281E91A0AFDB400C4B8AA /* IWNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWNavViewController.m; sourceTree = "<group>"; };
+		EC96951B1A09B8E00052E440 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		EC96951C1A09B8E00052E440 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		EC96951E1A09DA980052E440 /* IWTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWTabBarButton.h; sourceTree = "<group>"; };
+		EC96951F1A09DA980052E440 /* IWTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWTabBarButton.m; sourceTree = "<group>"; };
+		EC9695211A09F9AA0052E440 /* IWBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWBadgeView.h; sourceTree = "<group>"; };
+		EC9695221A09F9AA0052E440 /* IWBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWBadgeView.m; sourceTree = "<group>"; };
+		EC9695241A0A177D0052E440 /* UIBarButtonItem+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Create.h"; sourceTree = "<group>"; };
+		EC9695251A0A177D0052E440 /* UIBarButtonItem+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Create.m"; sourceTree = "<group>"; };
+		EC9695271A0A1B370052E440 /* IWTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWTitleButton.h; sourceTree = "<group>"; };
+		EC9695281A0A1B370052E440 /* IWTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWTitleButton.m; sourceTree = "<group>"; };
+		EC9695E71A0A6D700052E440 /* UIImage+Resizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resizable.h"; sourceTree = "<group>"; };
+		EC9695E81A0A6D700052E440 /* UIImage+Resizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resizable.m"; sourceTree = "<group>"; };
+		ECA9B0351A092DA4007B494F /* IWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWTabBar.h; sourceTree = "<group>"; };
+		ECA9B0361A092DA4007B494F /* IWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWTabBar.m; sourceTree = "<group>"; };
 		ECF3FA6D1A08BE6300CBDB16 /* ItcastWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItcastWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF3FA711A08BE6300CBDB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECF3FA741A08BE6300CBDB16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		ECF3FA751A08BE6300CBDB16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ECF3FA7D1A08BE6300CBDB16 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ECF3FA801A08BE6300CBDB16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ECF3FA861A08BE6300CBDB16 /* ItcastWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItcastWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +71,16 @@
 		ECF3FAAD1A0904DB00CBDB16 /* IWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWHomeViewController.m; sourceTree = "<group>"; };
 		ECF3FAB51A0904DB00CBDB16 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECF3FAC01A09057200CBDB16 /* ItcastWeibo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItcastWeibo.pch; sourceTree = "<group>"; };
+		ECF3FAC71A090C2C00CBDB16 /* IWMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWMessageViewController.h; sourceTree = "<group>"; };
+		ECF3FAC81A090C2C00CBDB16 /* IWMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWMessageViewController.m; sourceTree = "<group>"; };
+		ECF3FACA1A090C3700CBDB16 /* IWDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWDiscoverViewController.h; sourceTree = "<group>"; };
+		ECF3FACB1A090C3700CBDB16 /* IWDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWDiscoverViewController.m; sourceTree = "<group>"; };
+		ECF3FACD1A090C4900CBDB16 /* IWProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWProfileViewController.h; sourceTree = "<group>"; };
+		ECF3FACE1A090C4900CBDB16 /* IWProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWProfileViewController.m; sourceTree = "<group>"; };
+		ECF3FAD41A090C8800CBDB16 /* IWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWTabBarController.h; sourceTree = "<group>"; };
+		ECF3FAD51A090C8800CBDB16 /* IWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWTabBarController.m; sourceTree = "<group>"; };
+		ECF3FAD71A090EE600CBDB16 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECF3FAD81A090EE600CBDB16 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +101,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC96951A1A09B86E0052E440 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EC96951B1A09B8E00052E440 /* UIView+Frame.h */,
+				EC96951C1A09B8E00052E440 /* UIView+Frame.m */,
+				EC9695241A0A177D0052E440 /* UIBarButtonItem+Create.h */,
+				EC9695251A0A177D0052E440 /* UIBarButtonItem+Create.m */,
+				EC9695E71A0A6D700052E440 /* UIImage+Resizable.h */,
+				EC9695E81A0A6D700052E440 /* UIImage+Resizable.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		ECF3FA641A08BE6300CBDB16 = {
 			isa = PBXGroup;
 			children = (
@@ -81,8 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				ECF3FAA11A0904DB00CBDB16 /* Classes */,
-				ECF3FA741A08BE6300CBDB16 /* AppDelegate.h */,
-				ECF3FA751A08BE6300CBDB16 /* AppDelegate.m */,
 				ECF3FA7D1A08BE6300CBDB16 /* Images.xcassets */,
 				ECF3FA7F1A08BE6300CBDB16 /* LaunchScreen.xib */,
 				ECF3FA701A08BE6300CBDB16 /* Supporting Files */,
@@ -118,13 +171,14 @@
 		ECF3FAA11A0904DB00CBDB16 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				ECF3FAD01A090C7800CBDB16 /* Main */,
 				ECF3FAA21A0904DB00CBDB16 /* Compose(发微博) */,
 				ECF3FAA61A0904DB00CBDB16 /* Discover(发现) */,
 				ECF3FAAA1A0904DB00CBDB16 /* Home(首页) */,
 				ECF3FAB01A0904DB00CBDB16 /* Message(消息) */,
-				ECF3FAB41A0904DB00CBDB16 /* Other */,
 				ECF3FAB61A0904DB00CBDB16 /* Profile(个人) */,
 				ECF3FABA1A0904DB00CBDB16 /* Setting(设置) */,
+				ECF3FAB41A0904DB00CBDB16 /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -173,6 +227,8 @@
 		ECF3FAA71A0904DB00CBDB16 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ECF3FACA1A090C3700CBDB16 /* IWDiscoverViewController.h */,
+				ECF3FACB1A090C3700CBDB16 /* IWDiscoverViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,6 +262,8 @@
 			children = (
 				ECF3FAAC1A0904DB00CBDB16 /* IWHomeViewController.h */,
 				ECF3FAAD1A0904DB00CBDB16 /* IWHomeViewController.m */,
+				EC6281AE1A0A878B00C4B8AA /* IWPopViewController.h */,
+				EC6281AF1A0A878B00C4B8AA /* IWPopViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,6 +278,10 @@
 		ECF3FAAF1A0904DB00CBDB16 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EC9695271A0A1B370052E440 /* IWTitleButton.h */,
+				EC9695281A0A1B370052E440 /* IWTitleButton.m */,
+				EC6281AB1A0A78CC00C4B8AA /* IWPopView.h */,
+				EC6281AC1A0A78CC00C4B8AA /* IWPopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -237,6 +299,8 @@
 		ECF3FAB11A0904DB00CBDB16 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ECF3FAC71A090C2C00CBDB16 /* IWMessageViewController.h */,
+				ECF3FAC81A090C2C00CBDB16 /* IWMessageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -258,6 +322,9 @@
 		ECF3FAB41A0904DB00CBDB16 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				EC96951A1A09B86E0052E440 /* Category */,
+				ECF3FAD71A090EE600CBDB16 /* AppDelegate.h */,
+				ECF3FAD81A090EE600CBDB16 /* AppDelegate.m */,
 				ECF3FAB51A0904DB00CBDB16 /* main.m */,
 				ECF3FAC01A09057200CBDB16 /* ItcastWeibo.pch */,
 			);
@@ -277,6 +344,8 @@
 		ECF3FAB71A0904DB00CBDB16 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ECF3FACD1A090C4900CBDB16 /* IWProfileViewController.h */,
+				ECF3FACE1A090C4900CBDB16 /* IWProfileViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -322,6 +391,47 @@
 		ECF3FABD1A0904DB00CBDB16 /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECF3FAD01A090C7800CBDB16 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				ECF3FAD11A090C7800CBDB16 /* Controller */,
+				ECF3FAD21A090C7800CBDB16 /* Model */,
+				ECF3FAD31A090C7800CBDB16 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		ECF3FAD11A090C7800CBDB16 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECF3FAD41A090C8800CBDB16 /* IWTabBarController.h */,
+				ECF3FAD51A090C8800CBDB16 /* IWTabBarController.m */,
+				EC6281E81A0AFDB400C4B8AA /* IWNavViewController.h */,
+				EC6281E91A0AFDB400C4B8AA /* IWNavViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ECF3FAD21A090C7800CBDB16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECF3FAD31A090C7800CBDB16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECA9B0351A092DA4007B494F /* IWTabBar.h */,
+				ECA9B0361A092DA4007B494F /* IWTabBar.m */,
+				EC96951E1A09DA980052E440 /* IWTabBarButton.h */,
+				EC96951F1A09DA980052E440 /* IWTabBarButton.m */,
+				EC9695211A09F9AA0052E440 /* IWBadgeView.h */,
+				EC9695221A09F9AA0052E440 /* IWBadgeView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -426,9 +536,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF3FA761A08BE6300CBDB16 /* AppDelegate.m in Sources */,
+				EC9695291A0A1B370052E440 /* IWTitleButton.m in Sources */,
+				ECF3FACF1A090C4900CBDB16 /* IWProfileViewController.m in Sources */,
+				ECA9B0371A092DA4007B494F /* IWTabBar.m in Sources */,
+				ECF3FACC1A090C3700CBDB16 /* IWDiscoverViewController.m in Sources */,
+				EC9695201A09DA980052E440 /* IWTabBarButton.m in Sources */,
+				EC96951D1A09B8E00052E440 /* UIView+Frame.m in Sources */,
+				ECF3FAC91A090C2C00CBDB16 /* IWMessageViewController.m in Sources */,
+				ECF3FAD61A090C8800CBDB16 /* IWTabBarController.m in Sources */,
 				ECF3FABF1A0904DB00CBDB16 /* main.m in Sources */,
+				EC9695261A0A177D0052E440 /* UIBarButtonItem+Create.m in Sources */,
+				EC9695231A09F9AA0052E440 /* IWBadgeView.m in Sources */,
 				ECF3FABE1A0904DB00CBDB16 /* IWHomeViewController.m in Sources */,
+				ECF3FAD91A090EE600CBDB16 /* AppDelegate.m in Sources */,
+				EC9695E91A0A6D700052E440 /* UIImage+Resizable.m in Sources */,
+				EC6281B01A0A878B00C4B8AA /* IWPopViewController.m in Sources */,
+				EC6281EA1A0AFDB400C4B8AA /* IWNavViewController.m in Sources */,
+				EC6281AD1A0A78CC00C4B8AA /* IWPopView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,31 +7,99 @@
 //
 
 #import "IWHomeViewController.h"
+#import "IWTitleButton.h"
+#import "IWPopView.h"
+#import "IWPopViewController.h"
 
-@interface IWHomeViewController ()
 
+
+@interface IWHomeViewController ()<IWPopViewDelegate>
+
+@property (nonatomic, strong) IWPopView *popView;
+@property (nonatomic, weak) IWTitleButton *titleButton;
+
+@property (nonatomic, strong) IWPopViewController *popVc;
 @end
 
 @implementation IWHomeViewController
+- (IWPopViewController *)popVc
+{
+    if (_popVc == nil) {
+        IWPopViewController *pop = [[IWPopViewController alloc] init];
+        _popVc = pop;
+
+    }
+    return _popVc;
+}
+- (IWPopView *)popView
+{
+    if (_popView == nil) {
+        
+        IWPopView *v = [IWPopView popView];
+        v.delegate = self;
+        _popView = v;
+    }
+    return _popView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // 设置导航条的内容
+    [self setUpNavBar];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setUpNavBar
+{
+    UIBarButtonItem *friendsearch = [UIBarButtonItem barButtonItemWithImage:@"navigationbar_friendsearch" highImage:@"navigationbar_friendsearch_highlighted" target:self action:@selector(friendsearch)];
+    self.navigationItem.leftBarButtonItem = friendsearch;
+    
+    UIBarButtonItem *pop = [UIBarButtonItem barButtonItemWithImage:@"navigationbar_pop" highImage:@"navigationbar_pop_highlighted" target:self action:@selector(pop)];
+    self.navigationItem.rightBarButtonItem = pop;
+    
+    // 设置titleView
+    IWTitleButton *titleButton = [IWTitleButton buttonWithType:UIButtonTypeCustom];
+    [titleButton setTitle:@"首页" forState:UIControlStateNormal];
+    [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
+    _titleButton = titleButton;
+    
+    self.navigationItem.titleView = titleButton;
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)titleClick:(UIButton *)button
+{
+    button.selected = !button.selected;
+    
+    //  显示菜单
+    CGFloat x = (self.view.width - 200) * 0.5;
+    CGFloat y = CGRectGetMaxY(self.navigationController.navigationBar.frame) - 9;
+    
+    self.popView.contentView = self.popVc.view;
+    
+    [self.popView showInRect:CGRectMake(x, y, 200, 200)];
+    
 }
-*/
+
+- (void)popViewDidDismiss:(IWPopView *)popView
+{
+    _titleButton.selected = NO;
+    _popView = nil;
+}
+
+- (void)friendsearch
+{
+    IWLog(@"friendsearch");
+//    NSLog(@"friendsearch");
+}
+
+- (void)pop
+{
+    
+}
+
+
 
 @end

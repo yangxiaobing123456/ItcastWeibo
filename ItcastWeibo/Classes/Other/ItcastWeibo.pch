@@ -2,5 +2,23 @@
 
 #ifdef __OBJC__
 
+#define iOS7 ([UIDevice currentDevice].systemVersion.floatValue >= 7.0)
+#define iOS8 ([UIDevice currentDevice].systemVersion.floatValue >= 8.0)
+#define IWKeyWindow [UIApplication sharedApplication].keyWindow
+
+#define IWNavgationBarTitleFont [UIFont boldSystemFontOfSize:20]
+
+#import "UIView+Frame.h"
+#import "UIBarButtonItem+Create.h"
+#import "UIImage+Resizable.h"
+
+
+#ifdef DEBUG    
+#define IWLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define IWLog(...) 
+#endif
 
 #endif

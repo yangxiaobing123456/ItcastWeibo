@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "IWTabBarController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -21,13 +23,14 @@
     // 创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    UITabBarController *tabBarVc = [[UITabBarController alloc] init];
+    IWTabBarController *tabBarVc = [[IWTabBarController alloc] init];
     
-    // 添加子控制器
-    
+    // 设置窗口根控制器
+    self.window.rootViewController = tabBarVc;
     
     // 显示窗口并且成为主窗口
     [self.window makeKeyAndVisible];
+    
     
     return YES;
 }
