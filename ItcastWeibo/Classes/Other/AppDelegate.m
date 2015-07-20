@@ -8,7 +8,14 @@
 
 #import "AppDelegate.h"
 
-#import "IWTabBarController.h"
+#import "IWOAuthViewController.h"
+
+#import "IWGuideTool.h"
+#import "IWAccountTool.h"
+
+#import "UIImageView+WebCache.h"
+
+
 
 @interface AppDelegate ()
 
@@ -23,16 +30,31 @@
     // 创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    IWTabBarController *tabBarVc = [[IWTabBarController alloc] init];
-    
-    // 设置窗口根控制器
-    self.window.rootViewController = tabBarVc;
+    if ([IWAccountTool account]) {
+        [IWGuideTool guideRootViewController:self.window];
+    }else{
+        
+        IWOAuthViewController *oauth = [[IWOAuthViewController alloc] init];
+        self.window.rootViewController = oauth;
+    }
     
     // 显示窗口并且成为主窗口
     [self.window makeKeyAndVisible];
     
+    // 注册提醒通知
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge categories:nil];
+    [application registerUserNotificationSettings:settings];
     
     return YES;
+}
+
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
+{
+    // 停止所有下载
+    [[SDWebImageManager sharedManager] cancelAll];
+    
+    // 清空内存缓存
+    [[SDWebImageManager sharedManager].imageCache clearMemory];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -7,8 +7,8 @@
 //
 
 #import "IWNavViewController.h"
-
-@interface IWNavViewController ()
+#import "IWTabBar.h"
+@interface IWNavViewController ()<UINavigationControllerDelegate>
 
 @end
 
@@ -28,16 +28,18 @@
 
 + (void)setUpNavBarButton
 {
-    UIBarButtonItem *item = [UIBarButtonItem appearanceWhenContainedIn:[IWNavViewController class], nil];
+    UIBarButtonItem *item = [UIBarButtonItem appearance];
+    // 设置不可用状态下的按钮颜色
+    NSMutableDictionary *disableDictM = [NSMutableDictionary dictionary];
+    disableDictM[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+    [item setTitleTextAttributes:disableDictM forState:UIControlStateDisabled];
+    
     NSMutableDictionary *normalDictM = [NSMutableDictionary dictionary];
     normalDictM[NSForegroundColorAttributeName] = [UIColor orangeColor];
     // 设置普通状态下的按钮颜色
     [item setTitleTextAttributes:normalDictM forState:UIControlStateNormal];
     
-    // 设置不可用状态下的按钮颜色
-    NSMutableDictionary *disableDictM = [NSMutableDictionary dictionary];
-    disableDictM[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
-    [item setTitleTextAttributes:disableDictM forState:UIControlStateDisabled];
+    
 }
 
 // 设置导航条的标题
@@ -53,12 +55,49 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.interactivePopGestureRecognizer.delegate = nil;
+//    NSLog(@"%@",self.interactivePopGestureRecognizer.delegate);
+    
+    self.delegate = self;
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if (self.childViewControllers.count) { // 不是根控制器
+        
+        viewController.hidesBottomBarWhenPushed = YES;
+        
+        // 设置导航条的按钮
+        UIBarButtonItem *popPre = [UIBarButtonItem barButtonItemWithImage:@"navigationbar_back" highImage:@"navigationbar_back_highlighted" target:self action:@selector(popToPre)];
+        viewController.navigationItem.leftBarButtonItem = popPre;
+        
+         UIBarButtonItem *popRoot = [UIBarButtonItem barButtonItemWithImage:@"navigationbar_more" highImage:@"navigationbar_more_highlighted" target:self action:@selector(popToRoot)];
+        viewController.navigationItem.rightBarButtonItem = popRoot;
+    }
+
+    [super pushViewController:viewController animated:animated];
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)popToRoot
+{
+    [self popToRootViewControllerAnimated:YES];
+}
+- (void)popToPre
+{
+    [self popViewControllerAnimated:YES];
+}
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    UITabBarController *tabBarVc = (UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+
+    // 删除系统自带的tabBarButton
+    for (UIView *tabBarButton in tabBarVc.tabBar.subviews) {
+        if (![tabBarButton isKindOfClass:[IWTabBar class]]) {
+            [tabBarButton removeFromSuperview];
+        }
+    }
+
 }
 
 /*

@@ -32,6 +32,13 @@
 {
     _badgeValue = badgeValue;
     
+    if (badgeValue == nil || [badgeValue isEqualToString:@""] || [badgeValue isEqualToString:@"0"]) { // 没有badgeValue，或者badgeValue为空，就隐藏
+        self.hidden = YES;// 直接返回
+        return;
+    }else{
+        self.hidden = NO;
+    }
+    
     [self setTitle:badgeValue forState:UIControlStateNormal];
     
     CGFloat titleW = [badgeValue boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : HMBadgeTitleFont} context:nil].size.width;

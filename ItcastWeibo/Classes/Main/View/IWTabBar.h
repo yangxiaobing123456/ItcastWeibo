@@ -14,6 +14,7 @@
 
 @optional
 - (void)tabBar:(IWTabBar *)tabBar didSelectedIndex:(NSInteger)selectedIndex;
+- (void)tabBarDidClickAddBtn:(IWTabBar *)tabBar;
 
 @end
 

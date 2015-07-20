@@ -73,6 +73,14 @@
 
 }
 
+- (void)dealloc
+{
+    [_item removeObserver:self forKeyPath:@"badgeValue"];
+    [_item removeObserver:self forKeyPath:@"image"];
+    [_item removeObserver:self forKeyPath:@"selectedImage"];
+    [_item removeObserver:self forKeyPath:@"title"];
+}
+
 - (void)layoutSubviews
 {
     [super layoutSubviews];

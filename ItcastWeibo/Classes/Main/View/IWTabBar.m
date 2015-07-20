@@ -41,12 +41,21 @@
         [button setBackgroundImage:[UIImage imageNamed:@"tabbar_compose_button_highlighted"] forState:UIControlStateHighlighted];
         
         
+        [button addTarget:self action:@selector(clickAddBtn) forControlEvents:UIControlEventTouchUpInside];
+        
         [self addSubview:button];
         
         _addButton = button;
     }
     
     return _addButton;
+}
+
+- (void)clickAddBtn
+{
+    if ([_delegate respondsToSelector:@selector(tabBarDidClickAddBtn:)]) {
+        [_delegate tabBarDidClickAddBtn:self];
+    }
 }
 
 - (void)addTabBarButtonWithItem:(UITabBarItem *)item
@@ -102,8 +111,8 @@
 {
     CGFloat centerX = self.width * 0.5;
     CGFloat centerY = self.height * 0.5;
-    self.addButton.center = CGPointMake(centerX, centerY);
     self.addButton.size = [self.addButton backgroundImageForState:UIControlStateNormal].size;
+    self.addButton.center = CGPointMake(centerX, centerY);
 }
 
 - (void)setUpAllTabBarButtonFrame

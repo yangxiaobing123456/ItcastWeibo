@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface IWProfileViewController : UIViewController
+#import "IWBasicSettingViewController.h"
+@interface IWProfileViewController : IWBasicSettingViewController
 
 @end
